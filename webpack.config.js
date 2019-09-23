@@ -5,7 +5,6 @@ const DEV_PORT = process.env.PORT || 3000;
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'development',
   module: {
     rules: [
       {
