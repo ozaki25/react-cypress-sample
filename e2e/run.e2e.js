@@ -1,17 +1,10 @@
 const puppeteer = require('puppeteer');
 
-let page;
-let browser;
-
 beforeAll(async () => {
-  browser = await puppeteer.launch({ headless: true, slowMo: 250 });
-  page = await browser.newPage();
   await page.goto('http://127.0.0.1:3000');
 });
 
 afterAll(async done => {
-  await page.close();
-  await browser.close();
   done();
 });
 
