@@ -35,9 +35,9 @@ function App() {
         </Typography>
         <Button onClick={onClick}>送信</Button>
         {result && (
-          <Typography>
+          <Typography className="result">
             {`背番号 ${result.number} 番の選手は ${
-              result.name ? `${result.name}です` : 'いません'
+              result.name ? `${result.name} です` : 'いません'
             }`}
           </Typography>
         )}
