@@ -27,8 +27,10 @@
     "webpack-dev-server": "^3.8.1"
   },
   "scripts": {
-    "start": "webpack-dev-server -d --open",
+    "start": "webpack-dev-server -d",
     "build": "webpack -p",
-    "test": "jest"
+    "test": "jest",
+    "puppeteer": "jest -c ./e2e/config.json",
+    "e2e": "start-server-and-test start http://localhost:3000 puppeteer"
   }
 }
