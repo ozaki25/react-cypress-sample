@@ -1,4 +1,4 @@
-const members = {
+export const members = {
   1: '斎藤佑樹',
   2: '杉谷拳士',
   3: '田中賢介',
