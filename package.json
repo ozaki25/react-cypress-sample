@@ -1,5 +1,5 @@
 {
-  "name": "cypress-sample",
+  "name": "react-e2e-sample",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
