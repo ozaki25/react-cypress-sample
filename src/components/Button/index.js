@@ -18,8 +18,8 @@ const Btn = styled.button`
   }
 `;
 
-function Button({ children }) {
-  return <Btn>{children}</Btn>;
+function Button(props) {
+  return <Btn {...props} />;
 }
 
 export default Button;
