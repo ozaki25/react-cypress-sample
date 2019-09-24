@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import 'jest-styled-components';
 
 export const snapshot = (title, element) => {
   it(`should match snapshot: ${title}`, () => {
