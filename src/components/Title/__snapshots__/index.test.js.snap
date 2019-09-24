@@ -2,7 +2,7 @@
 
 exports[`should match snapshot: Title 1`] = `
 <h1
-  className="sc-bdVaJa jXsmnv"
+  className="sc-bdVaJa hbaNnr"
 >
   タイトル
 </h1>
