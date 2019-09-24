@@ -31,8 +31,6 @@
     "start": "webpack-dev-server -d --host 127.0.0.1",
     "build": "webpack -p",
     "test": "jest",
-    "puppeteer": "jest -c ./e2e/config.json",
-    "e2e:start:server": "npm run build && npx http-server build -p 3000",
-    "e2e": "start-server-and-test e2e:start:server http://127.0.0.1:3000 puppeteer"
+    "e2e": "jest -c ./e2e/config.json"
   }
 }
