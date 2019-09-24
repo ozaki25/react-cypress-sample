@@ -9,8 +9,8 @@ const H1 = styled.h1`
   margin: 0 0 15px;
 `;
 
-function Title({ children }) {
-  return <H1>{children}</H1>;
+function Title(props) {
+  return <H1 {...props} />;
 }
 
 export default Title;

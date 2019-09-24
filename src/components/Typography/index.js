@@ -8,8 +8,8 @@ const P = styled.p`
   color: ${({ error }) => (error ? '#d32f2f' : '#000')};
 `;
 
-function Typography({ children, error }) {
-  return <P error={error ? 1 : 0}>{children}</P>;
+function Typography({ error, ...rest }) {
+  return <P error={error ? 1 : 0} {...rest} />;
 }
 
 export default Typography;
