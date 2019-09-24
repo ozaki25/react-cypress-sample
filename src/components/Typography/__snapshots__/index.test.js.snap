@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot: Typography 1`] = `
+.c0 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+<p
+  className="c0"
+>
+  通常の文章です
+</p>
+`;
