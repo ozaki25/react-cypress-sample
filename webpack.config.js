@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const DEV_PORT = process.env.PORT || 3000;
 
@@ -20,13 +21,16 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'public/'),
+    path: path.resolve(__dirname, 'build/'),
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public/'),
+    contentBase: path.join(__dirname, 'build/'),
     port: DEV_PORT,
     hot: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new CopyPlugin([{ from: './public', to: '.' }]),
+  ],
 };
