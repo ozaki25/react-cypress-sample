@@ -27,7 +27,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "scripts": {
-    "start": "webpack-dev-server -d --host 127.0.0.1",
+    "start": "webpack-dev-server -d",
     "build": "webpack -p",
     "test": "jest",
     "e2e": "jest -c ./e2e/config.json"
