@@ -6,7 +6,7 @@ const H1 = styled.h1`
   padding: 0.3em;
   background: #e3f2fd;
   border-bottom: solid 5px #1565c0;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 `;
 
 function Title({ children }) {
