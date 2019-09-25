@@ -39,6 +39,6 @@
     "build": "webpack -p",
     "test": "jest",
     "e2e": "jest -c ./e2e/config.json",
-    "lint": "eslint ./src/**/*.js"
+    "lint": "eslint 'src/**/*.js'"
   }
 }
