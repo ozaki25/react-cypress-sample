@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import Title from './components/Title';
 import Typography from './components/Typography';
 import TextInput from './components/TextInput';
@@ -18,7 +17,6 @@ function App() {
     setValid(isValid);
     setResult(null);
     if (isValid) {
-      console.log({ members });
       setResult({ name: members[value], number: value });
       setValue('');
     }
