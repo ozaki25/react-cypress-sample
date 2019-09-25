@@ -1,6 +1,4 @@
 import { isUniformNumber } from './index';
-import { italic } from 'ansi-colors';
-import expectExport from 'expect';
 
 describe('#isUniformNumber', () => {
   describe('正常系', () => {

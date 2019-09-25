@@ -12,6 +12,9 @@ jobs:
       - name: install
         run: |
           yarn install
+      - name: lint
+        run: |
+          yarn lint
       - name: unit-test
         run: |
           yarn test
