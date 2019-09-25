@@ -1,7 +1,10 @@
-name: Main
-on: [pull_request]
+name: Deploy
+on:
+  push:
+    branches:
+      - master
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -12,15 +15,6 @@ jobs:
       - name: install
         run: |
           yarn install
-      - name: lint
-        run: |
-          yarn lint
-      - name: unit-test
-        run: |
-          yarn test
-      - name: e2e-test
-        run: |
-          yarn e2e
       - name: build
         run: |
           yarn build
@@ -28,4 +22,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2.3.1
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          PUBLISH_BRANCH: master
           PUBLISH_DIR: ./build
