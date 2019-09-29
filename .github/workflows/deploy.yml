@@ -15,12 +15,12 @@ jobs:
       - name: install
         run: |
           yarn install
-      - name: build
+      - name: build-storybook
         run: |
-          yarn build
+          yarn build-storybook
       - name: deploy
         uses: peaceiris/actions-gh-pages@v2.3.1
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./build
+          PUBLISH_DIR: ./storybook-static
