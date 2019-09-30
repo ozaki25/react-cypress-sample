@@ -29,6 +29,6 @@ jobs:
       - name: install
         run: |
           yarn install
-      - name: e2e-test
+      - name: test
         run: |
           yarn e2e
