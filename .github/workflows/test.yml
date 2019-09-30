@@ -1,7 +1,7 @@
 name: Test
 on: [pull_request]
 jobs:
-  test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,9 +15,20 @@ jobs:
       - name: lint
         run: |
           yarn lint
-      - name: unit-test
+      - name: test
         run: |
           yarn test
+  e2e-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: install
+        run: |
+          yarn install
       - name: e2e-test
         run: |
           yarn e2e
