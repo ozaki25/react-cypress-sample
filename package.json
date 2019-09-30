@@ -42,8 +42,8 @@
   "scripts": {
     "start": "webpack-dev-server -d",
     "build": "webpack -p",
-    "test": "jest",
-    "e2e": "jest -c ./e2e/config.json",
+    "test": "jest --coverage --verbose",
+    "e2e": "jest -c ./e2e/config.json --verbose",
     "lint": "eslint 'src/**/*.js'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
